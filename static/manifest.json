@@ -1,0 +1,17 @@
+{
+  "name": "My Blog",
+  "short_name": "Blog",
+  "theme_color": "#2e8555",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "img/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+
