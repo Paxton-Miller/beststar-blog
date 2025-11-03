@@ -27,5 +27,35 @@ export const Friends: Friend[] = [
     website: 'https://github.com/YcSoku',
     avatar: '/img/friend/YcSoku.png',
   },
+  {
+    title: 'UyNauh Loo',
+    description: '实事求是',
+    website: 'https://github.com/unaloo',
+    avatar: '/img/friend/unaloo.png',
+  },
+  {
+    title: '1CHRY1',
+    description: 'sheep and wolves',
+    website: 'https://github.com/1CHRY1',
+    avatar: '/img/friend/1CHRY1.png',
+  },
+  {
+    title: 'Kenneth Yin',
+    description: '江北送君归',
+    website: 'https://github.com/yinb1426',
+    avatar: '/img/friend/yinb1426.png',
+  },
+  {
+    title: 'StevenDa',
+    description: '看山还是山',
+    website: 'https://github.com/StevenDa',
+    avatar: '/img/friend/StevenDa.png',
+  },
+  {
+    title: 'Fliicker',
+    description: 'Be the change you wanna see in this world',
+    website: 'https://github.com/Fliicker',
+    avatar: '/img/friend/Fliicker.png',
+  },
   // 添加更多友链...
 ]
