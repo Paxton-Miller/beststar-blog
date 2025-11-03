@@ -1,4 +1,4 @@
-export const skills = [
+const SKILLS = [
   // 前端技术栈
   'TypeScript',
   'JavaScript',
@@ -28,3 +28,5 @@ export const skills = [
 
   // TODO: 添加更多你熟悉的技术栈
 ]
+
+export default SKILLS

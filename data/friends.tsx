@@ -15,12 +15,18 @@ export const Friends: Friend[] = [
     //     avatar: '/img/friend/example.png',
     //   },
     ////////////////////////////////
-  {
-    title: '峰华前端工程师',
-    description: '致力于帮助你以最直观、最快速的方式学会前端开发',
-    website: 'https://zxuqian.cn',
-    avatar: '/img/friend/zxuqian.png',
-  },
+    {
+        title: '愧怍',
+        description: 'Never let yourself be idle',
+        website: 'https://github.com/kuizuo',
+        avatar: '/img/friend/kuizuo.png',
+    },
+    {
+        title: '峰华前端工程师',
+        description: '致力于帮助你以最直观、最快速的方式学会前端开发',
+        website: 'https://zxuqian.cn',
+        avatar: '/img/friend/zxuqian.png',
+    },
   {
     title: 'YcSoku',
     description: 'GISer ❎ Toy Maker ✅ Toy Factory',
@@ -57,5 +63,10 @@ export const Friends: Friend[] = [
     website: 'https://github.com/Fliicker',
     avatar: '/img/friend/Fliicker.png',
   },
-  // 添加更多友链...
+  {
+    title: 'Flittly',
+    description: '永远相信美好的事情即将发生',
+    website: 'https://github.com/Flittly',
+    avatar: '/img/friend/Flittly.png',
+  },
 ]

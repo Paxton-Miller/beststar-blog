@@ -11,7 +11,7 @@ const config: Config = {
   organizationName: 'beststarli',
   projectName: 'blog',
   customFields: {
-    bio: '让行动超过思考',
+    bio: '让行动超越思考',
     description: '欢迎访问我的博客，这是一个基于 Docusaurus 构建的个人博客，主要分享技术文章、项目经验和生活碎碎念。',
   },
 
@@ -91,10 +91,17 @@ const config: Config = {
                 </a>
                 `,
             },
+            {
+              html: `
+                <a href="http://geomodeling.njnu.edu.cn/" target="_blank" rel="noreferrer noopener">
+                  <img src="/img/opengms.png" alt="Built with Docusaurus" width="120" height="37"/>
+                </a>
+                `,
+            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Blog. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} BestStar's Blog. Built with Docusaurus.`,
     },
     prism: {
       theme: themes.oneLight,

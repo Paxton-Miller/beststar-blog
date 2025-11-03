@@ -14,7 +14,7 @@ const DESCRIPTION = '有很多良友，胜于有很多财富。'
 const ADD_FRIEND_URL = 'https://github.com/beststarli/beststar-blog/edit/main/data/friends.tsx'
 // TODO: 修改为你的网站信息
 const SITE_INFO = `title: '嘉星的博客'
-description: '让行动超过思考'
+description: '让行动超越思考'
 website: 'https://beststar-blog.vercel.app'
 avatar: 'https://beststar-blog.vercel.app/img/logo.svg'
 `

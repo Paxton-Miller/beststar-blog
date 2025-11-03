@@ -42,7 +42,7 @@ const socialSet: Record<keyof Social | 'rss', SocialValue> = {
   },
   juejin: {
     href: social.juejin,
-    title: '掘金',
+    title: '稀土掘金',
     icon: 'simple-icons:juejin',
     color: '#1E81FF',
   },
@@ -91,7 +91,7 @@ const socialSet: Record<keyof Social | 'rss', SocialValue> = {
   },
   cloudmusic: {
     href: social.cloudmusic,
-    title: '网易云',
+    title: '网易云音乐',
     icon: 'ri:netease-cloud-music-line',
     color: '#C20C0C',
   },
