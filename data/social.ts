@@ -84,7 +84,7 @@ const socialSet: Record<keyof Social | 'rss', SocialValue> = {
   },
 
   qqmusic: {
-    href: social.cloudmusic,
+    href: social.qqmusic,
     title: 'QQ音乐',
     icon: 'arcticons:qq-music',
     color: '#0FBE73',

@@ -11,7 +11,7 @@ import styles from './styles.module.css'
 const TITLE = '友链'
 const DESCRIPTION = '有很多良友，胜于有很多财富。'
 // TODO: 修改为你的 GitHub 仓库地址
-const ADD_FRIEND_URL = 'https://github.com/beststarli/blog/edit/main/data/friends.tsx'
+const ADD_FRIEND_URL = 'https://github.com/beststarli/beststar-blog/edit/main/data/friends.tsx'
 // TODO: 修改为你的网站信息
 const SITE_INFO = `title: '嘉星的博客'
 description: '让行动超过思考'
