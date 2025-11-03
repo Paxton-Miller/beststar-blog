@@ -23,7 +23,7 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "moduleResolution": "Bundler",
-    "skipLibCheck": false
+    "skipLibCheck": true
   },
   "exclude": [".docusaurus", "build", "node_modules"]
 }

@@ -1,16 +1,16 @@
 import type * as Preset from '@docusaurus/preset-classic'
 import type { Config } from '@docusaurus/types'
 import { themes } from 'prism-react-renderer'
+import social from './data/social'
 
 const config: Config = {
   title: '嘉星的博客',
   tagline: '让行动超过思考',
-  url: 'https://your-domain.com', //TODO: 替换为博客域名
+  url: 'https://beststar-blog.vercel.app/', // TODO: 替换为博客域名
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'beststarli',
   projectName: 'blog',
-  
   customFields: {
     bio: '让行动超过思考',
     description: '欢迎访问我的博客，这是一个基于 Docusaurus 构建的个人博客，主要分享技术文章、项目经验和生活碎碎念。',
@@ -40,20 +40,24 @@ const config: Config = {
     navbar: {
       title: 'My Blog',
       logo: {
-        alt: 'My Blog Logo',
-        src: 'img/logo.svg',
-        srcDark: 'img/logo.svg',
+        alt: '嘉星',
+        src: 'img/beststar.jpg',
+        srcDark: 'img/beststar.jpg',
       },
       hideOnScroll: true,
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'right',
-          label: '文档',
-        },
         { label: '博客', position: 'right', to: 'blog' },
+        { label: '项目', position: 'right', to: 'project' },
+        { label: '友链', position: 'right', to: 'friends' },
         { label: '关于', position: 'right', to: 'about' },
+        {
+          label: '更多',
+          position: 'right',
+          items: [
+            { label: '归档', to: 'blog/archive' },
+            { label: '文档', to: 'docs/intro' },
+          ],
+        },
       ],
     },
     footer: {
@@ -64,23 +68,27 @@ const config: Config = {
           items: [
             { label: '博客', to: 'blog' },
             { label: '归档', to: 'blog/archive' },
+            { label: '项目', to: 'project' },
             { label: '文档', to: '/docs/intro' },
           ],
         },
         {
-          title: '社交',
+          title: '社交媒体',
           items: [
             { label: '关于我', to: '/about' },
-            { label: 'GitHub', href: 'https://github.com/yourusername' },
+            { label: 'GitHub', href: social.github.href },
+            { label: '稀土掘金', href: social.juejin.href },
+            { label: '小红书', href: social.xiaohongshu.href },
           ],
         },
         {
           title: '更多',
           items: [
+            { label: '友链', position: 'right', to: 'friends' },
             {
               html: `
                 <a href="https://docusaurus.io" target="_blank" rel="noreferrer noopener">
-                  <img src="/img/docusaurus.png" alt="Built with Docusaurus" width="120" height="50"/>
+                  <img src="/img/buildwith.png" alt="Built with Docusaurus" width="120" height="50"/>
                 </a>
                 `,
             },
@@ -138,20 +146,9 @@ const config: Config = {
           path: 'docs',
           sidebarPath: './sidebars.ts',
         },
-        blog: {
-          showReadingTime: true,
-          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
-            defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
-          feedOptions: {
-            type: 'all',
-            title: 'My Blog',
-          },
-          blogSidebarCount: 10,
-          blogSidebarTitle: '最近文章',
-          postsPerPage: 12,
-        },
+        blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/css/tweet-theme.css'],
         },
         sitemap: {
           priority: 0.5,
@@ -162,6 +159,27 @@ const config: Config = {
 
   plugins: [
     'docusaurus-plugin-image-zoom',
+    [
+      './src/plugin/plugin-content-blog',
+      {
+        path: 'blog',
+        editUrl: ({ locale, blogDirPath, blogPath }) =>
+          `https://github.com/beststarli/blog/edit/main/${blogDirPath}/${blogPath}`,
+        editLocalizedFiles: false,
+        blogDescription: '记录技术成长和生活感悟',
+        blogSidebarCount: 10,
+        blogSidebarTitle: '最近文章',
+        postsPerPage: 12,
+        showReadingTime: true,
+        readingTime: ({ content, frontMatter, defaultReadingTime, locale }) =>
+          defaultReadingTime({ content, locale, options: { wordsPerMinute: 300 } }),
+        feedOptions: {
+          type: 'all',
+          title: '嘉星的博客',
+          description: '记录技术成长和生活感悟',
+        },
+      },
+    ],
     async function tailwindcssPlugin() {
       return {
         name: 'docusaurus-tailwindcss',

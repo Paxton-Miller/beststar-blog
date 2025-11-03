@@ -1,20 +1,71 @@
-# 关于我
+---
+id: about
+title: 关于我
+description: 自我介绍
+hide_table_of_contents: true
+---
 
-欢迎来到我的博客！
+import { Icon } from '@iconify/react'
+import Comment from '@site/src/components/Comment'
+import social from '@site/data/social'
 
-## 简介
+# 你好👋，我是嘉星。
 
-这是一个基于 Docusaurus 构建的个人博客网站。
+{/* TODO: 在这里填写你的自我介绍 */}
 
-## 联系方式
+- 👨‍💻 一名热爱技术的开发者
 
-- GitHub: [Your GitHub](https://github.com/yourusername)
-- Email: your.email@example.com
+- 🧑 正在不断学习和成长
 
-## 技术栈
+- 🐛 对编程充满热情
 
-- React
-- TypeScript
-- Docusaurus
-- Tailwind CSS
+- 💡 喜欢记录和分享技术心得
 
+### 我的编程之旅
+
+{/* TODO: 在这里分享你的编程经历 */}
+
+### 兴趣爱好
+
+{/* TODO: 在这里分享你的兴趣爱好 */}
+
+- **编程开发** 将想法付诸实践，享受创造的乐趣
+
+> 生命不息，折腾不止。
+
+### 我的设备
+
+{/* TODO: 在这里列出你的设备 */}
+
+### 我会什么
+
+{/* TODO: 在这里列出你掌握的技能 */}
+
+- Web 全栈开发
+- React / Vue
+- Node.js
+
+### 联系方式
+
+<p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+  <Icon icon="ri:github-line" width="20" height="20" />
+  <a href={social.github.href} target="_blank">GitHub</a>
+</p>
+
+<p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+  <Icon icon="simple-icons:juejin" width="20" height="20" />
+  <a href={social.juejin.href} target="_blank">稀土掘金</a>
+</p>
+
+<p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+  <Icon icon="ri:mail-open-line" width="20" height="20" />
+  <a href={social.email.href} target="_blank">Email</a>
+</p>
+
+---
+
+感谢你能看到这里，希望我的分享对你有帮助。
+
+> **既然都看到这了，不妨留下你的评论。**
+
+<Comment />
