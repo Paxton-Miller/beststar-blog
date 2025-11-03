@@ -17,15 +17,16 @@ const defaultConfig: Partial<GiscusProps> & { darkTheme: string } = {
   darkTheme: 'dark_dimmed',
 }
 
-export default function Comment(): JSX.Element {
-  const themeConfig = useThemeConfig() as ThemeConfig & { giscus: GiscusConfig }
+export default function Comment() {
+  const themeConfig = useThemeConfig() as ThemeConfig & { giscus?: GiscusConfig }
   const { i18n } = useDocusaurusContext()
 
   // merge default config
   const giscus = { ...defaultConfig, ...themeConfig.giscus }
 
+  // 如果没有配置 Giscus，不显示评论组件
   if (!giscus.repo || !giscus.repoId || !giscus.categoryId) {
-    throw new Error('You must provide `repo`, `repoId`, and `categoryId` to `themeConfig.giscus`.')
+    return null
   }
 
   giscus.theme = useColorMode().colorMode === 'dark' ? giscus.darkTheme : giscus.theme
