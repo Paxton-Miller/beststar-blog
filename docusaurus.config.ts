@@ -46,15 +46,15 @@ const config: Config = {
       hideOnScroll: true,
       items: [
         { label: '博客', position: 'right', to: 'blog' },
+        { label: '文档', position: 'right', to: '/docs/intro' },
         { label: '项目', position: 'right', to: 'project' },
-        { label: '友链', position: 'right', to: 'friends' },
         { label: '关于', position: 'right', to: 'about' },
         {
           label: '更多',
           position: 'right',
           items: [
             { label: '归档', to: 'blog/archive' },
-            { label: '文档', to: 'docs/intro' },
+            { label: '友链', to: 'friends' },
           ],
         },
       ],
