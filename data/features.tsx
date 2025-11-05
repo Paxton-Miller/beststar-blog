@@ -1,5 +1,8 @@
 import { Icon } from '@iconify/react'
 import Translate from '@docusaurus/Translate'
+import OpenSourceSvg from '@site/static/svg/undraw_open_source.svg'
+import WebDeveloperSvg from '@site/static/svg/undraw_developer-activity_4zqd.svg'
+import IdeasSvg from '@site/static/svg/undraw_ideas_vn7a.svg'
 
 export type FeatureItem = {
   title: string | React.ReactNode
@@ -17,18 +20,18 @@ const FEATURES: FeatureItem[] = [
         作为一名开发者，致力于学习和分享前沿技术知识
       </Translate>
     ),
-    header: <>💻</>,
-    icon: <Icon icon="logos:typescript-icon" className="h-4 w-4 text-neutral-500" />,
+    header: <WebDeveloperSvg className="h-auto w-full" height={150} role="img" />,
+    icon: <Icon icon="logos:typescript-icon" className="size-4 text-neutral-500" />,
   },
   {
     title: <Translate id="homepage.feature.blogger">博客写作</Translate>,
     description: (
       <Translate id="homepage.feature.blogger.desc">
-        热爱写作，记录技术成长和生活感悟
+        热爱用文字记录，写下自己的技术成长和生活感悟
       </Translate>
     ),
-    header: <>✍️</>,
-    icon: <Icon icon="logos:react" className="h-4 w-4 text-neutral-500" />,
+    header: <IdeasSvg className="h-auto w-full" height={150} role="img" />,
+    icon: <Icon icon="carbon:pen" className="size-4 text-neutral-500" />,
   },
   {
     title: <Translate id="homepage.feature.openSource">开源贡献</Translate>,
@@ -37,8 +40,8 @@ const FEATURES: FeatureItem[] = [
         积极参与开源社区，分享优质项目
       </Translate>
     ),
-    header: <>🌟</>,
-    icon: <Icon icon="logos:github-icon" className="h-4 w-4 text-neutral-500" />,
+    header: <OpenSourceSvg className="h-auto w-full" height={150} role="img" />,
+    icon: <Icon icon="logos:github-icon" className="size-4 text-neutral-500" />,
   },
 ]
 
