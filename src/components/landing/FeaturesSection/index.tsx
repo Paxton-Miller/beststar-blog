@@ -1,5 +1,7 @@
 import Translate from '@docusaurus/Translate'
 import features from '@site/data/features'
+import Skill from './Skill'
+import Github from './Github'
 import { cn } from '@site/src/lib/utils'
 import { BentoGrid, BentoGridItem } from '../../magicui/bento-grid'
 import { Section } from '../Section'
@@ -20,10 +22,10 @@ export default function FeaturesSection() {
         ))}
       </BentoGrid>
 
-      {/* <div className="mt-4 grid grid-cols-1 justify-center gap-4 px-0 md:grid-cols-6 md:grid-rows-2 md:px-4">
+      <div className="mt-4 grid grid-cols-1 justify-center gap-4 px-0 md:grid-cols-6 md:grid-rows-2 md:px-4">
         <Skill className="md:col-span-2 md:row-span-2" />
         <Github className="h-full md:col-span-4 md:row-span-2" />
-      </div> */}
+      </div>
     </Section>
   )
 }

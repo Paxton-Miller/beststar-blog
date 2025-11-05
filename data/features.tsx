@@ -11,7 +11,6 @@ export type FeatureItem = {
   icon?: React.ReactNode
 }
 
-// TODO: 根据你的特色修改以下内容
 const FEATURES: FeatureItem[] = [
   {
     title: <Translate id="homepage.feature.developer">技术开发</Translate>,
