@@ -2,6 +2,7 @@ import type * as Preset from '@docusaurus/preset-classic'
 import type { Config } from '@docusaurus/types'
 import { themes } from 'prism-react-renderer'
 import social from './data/social'
+import type { GiscusConfig } from './src/components/Comment'
 
 const config: Config = {
   title: '嘉星的博客',
@@ -142,6 +143,14 @@ const config: Config = {
         dark: 'rgb(50, 50, 50)',
       },
     },
+    giscus: {
+      repo: 'beststarli/beststar-blog', // 替换为你的仓库
+      repoId: 'R_kgDOQMrJ0Q', // 从 giscus.app 获取
+      category: 'General', // 替换为你选择的分类
+      categoryId: 'DIC_kwDOQMrJ0c4CxdDw', // 从 giscus.app 获取
+      theme: 'light',
+      darkTheme: 'dark_dimmed',
+    } satisfies Partial<GiscusConfig>,
   } satisfies Preset.ThemeConfig,
 
   presets: [
