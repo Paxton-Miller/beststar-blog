@@ -6,6 +6,7 @@ hide_table_of_contents: true
 ---
 
 import { Icon } from "@iconify/react";
+import Comment from "@site/src/components/Comment";
 import social from "@site/data/social";
 
 # 你好 👋，我是嘉星。
@@ -17,8 +18,8 @@ import social from "@site/data/social";
     全网同名BestStar(嘉星)，头像来自我的机核[机组形象](https://www.gcores.com/users/636802/talks){" "}
     <img
       src="/img/beststar.jpg"
-      width="30"
-      heigth="30"
+      width="45"
+      heigth="45"
       className="rounded-full"
     />
   </p>
@@ -77,31 +78,12 @@ import social from "@site/data/social";
 - 网络爬虫（通过关键词爬取携程景区评论）
 - ArcMap / QGIS 地理数据处理与制图
 
-### 联系方式
-
-<p style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-  <Icon icon="ri:github-line" width="20" height="20" />
-  <a href={social.github.href} target="_blank">
-    GitHub
-  </a>
-</p>
-
-<p style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-  <Icon icon="simple-icons:juejin" width="20" height="20" />
-  <a href={social.juejin.href} target="_blank">
-    稀土掘金
-  </a>
-</p>
-
-<p style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-  <Icon icon="ri:mail-open-line" width="20" height="20" />
-  <a href={social.email.href} target="_blank">
-    Email
-  </a>
-</p>
-
 ---
 
 感谢你能看到这里，希望我的分享对你有帮助。
 
+> **欢迎留下你的评论。**
+
 {/* 评论功能需要配置 Giscus，配置后会自动显示 */}
+
+<Comment />

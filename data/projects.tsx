@@ -15,12 +15,12 @@ export type TagType =
 export type ProjectType = 'web' | 'app' | 'commerce' | 'personal' | 'toy' | 'other'
 
 export const projectTypeMap = {
-  web: '网站',
-  app: '应用',
-  commerce: '商业项目',
-  personal: '个人',
-  toy: '玩具',
-  other: '其他',
+  web: '🖥️ 横向',
+  app: '💫 应用',
+  commerce: '🛒 商业项目',
+  personal: '👨‍💻 个人',
+  toy: '🔫 玩具',
+  other: '🗃️ 其他',
 }
 
 export type Project = {
@@ -68,19 +68,43 @@ export const Tags: Record<TagType, Tag> = {
 
 export const TagList = Object.keys(Tags) as TagType[]
 
-// TODO: 在这里添加你的项目
 export const projects: Project[] = [
-  // 示例项目，请根据实际情况修改或删除
   {
-    title: '示例项目',
-    description: '这是一个示例项目，请替换为你自己的项目',
-    preview: '/img/project/example.png',
-    website: 'https://example.com',
-    source: 'https://github.com/yourusername/yourproject',
-    tags: ['opensource', 'favorite'],
+    title: '交互式水动力建模与模拟平台',
+    description: '支持香港北部都会区建设的城市洪涝灾害仿真模拟系统',
+    preview: '/img/tech/gridman.png',
+    website: 'https://github.com/beststarli/gridman',
+    source: 'https://github.com/beststarli/gridman',
+    tags: ['opensource', 'design', 'large', 'favorite'],
     type: 'web',
   },
-  // 添加更多项目...
+  {
+    title: 'React项目脚手架',
+    description: '封装了TailwindCSS, shadcn/ui, Vite, TypeScript的React项目脚手架',
+    preview: '/img/tech/scaffold.png',
+    website: 'https://github.com/beststarli/scaffold',
+    source: 'https://github.com/beststarli/scaffold',
+    tags: ['opensource', 'personal', 'favorite'],
+    type: 'personal',
+  },
+  {
+    title: 'AutoWater洪水管网演示系统',
+    description: '结合洪水演进、三维地图瓦片、管道管网的可视化演示系统',
+    preview: '/img/tech/autowater.png',
+    website: 'https://github.com/beststarli/AutoWaterNeo',
+    source: 'https://github.com/beststarli/AutoWaterNeo',
+    tags: ['opensource', 'design'],
+    type: 'app',
+  },
+  {
+    title: 'Verdandi描述性文本文件生成器',
+    description: '为信息资源树Yggdrail服务的Schema和Component描述JSON文件生成器',
+    preview: '/img/tech/verdandi.png',
+    website: 'https://github.com/beststarli/verdandi',
+    source: 'https://github.com/beststarli/verdandi',
+    tags: ['opensource', 'personal'],
+    type: 'app',
+  },
 ]
 
 export const groupByProjects = projects.reduce(

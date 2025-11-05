@@ -46,16 +46,16 @@ const config: Config = {
       },
       hideOnScroll: true,
       items: [
-        { label: '博客', position: 'right', to: 'blog' },
         { label: '文档', position: 'right', to: '/docs/intro' },
+        { label: '博客', position: 'right', to: 'blog' },
         { label: '项目', position: 'right', to: 'project' },
         { label: '关于', position: 'right', to: 'about' },
         {
           label: '更多',
           position: 'right',
           items: [
-            { label: '归档', to: 'blog/archive' },
-            { label: '友链', to: 'friends' },
+            { label: '博客归档', to: 'blog/archive' },
+            { label: '友情链接', to: 'friends' },
           ],
         },
       ],
@@ -66,10 +66,10 @@ const config: Config = {
         {
           title: '学习',
           items: [
-            { label: '博客', to: 'blog' },
-            { label: '归档', to: 'blog/archive' },
-            { label: '项目', to: 'project' },
             { label: '文档', to: '/docs/intro' },
+            { label: '博客', to: 'blog' },
+            { label: '项目', to: 'project' },
+            { label: '归档', to: 'blog/archive' },
           ],
         },
         {
@@ -84,7 +84,7 @@ const config: Config = {
         {
           title: '更多',
           items: [
-            { label: '友链', position: 'right', to: 'friends' },
+            { label: '友情链接', position: 'right', to: 'friends' },
             {
               html: `
                 <a href="https://docusaurus.io" target="_blank" rel="noreferrer noopener">
@@ -144,10 +144,10 @@ const config: Config = {
       },
     },
     giscus: {
-      repo: 'beststarli/beststar-blog', // 替换为你的仓库
-      repoId: 'R_kgDOQMrJ0Q', // 从 giscus.app 获取
-      category: 'General', // 替换为你选择的分类
-      categoryId: 'DIC_kwDOQMrJ0c4CxdDw', // 从 giscus.app 获取
+      repo: 'beststarli/beststar-blog',
+      repoId: 'R_kgDOQMrJ0Q',
+      category: 'General',
+      categoryId: 'DIC_kwDOQMrJ0c4CxdDw',
       theme: 'light',
       darkTheme: 'dark_dimmed',
     } satisfies Partial<GiscusConfig>,
