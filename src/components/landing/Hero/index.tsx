@@ -63,7 +63,7 @@ export default function Hero() {
         <Name />
         <motion.p custom={2} initial="hidden" animate="visible" variants={variants} className="max-lg:px-4">
           <Translate id="homepage.hero.text">
-            感谢你的到访，在这里我会分享自己在学习技术栈时遇到的问题与解决方案，也会在此记录自己生活的碎碎念，并希望我的成长经历对你有所启发。
+            感谢你的到访，在这里我会分享自己在学习技术栈时遇到的问题与解决方案，也会在此记录自己生活的碎碎念，并希望我的成长经历对你有所帮助。
           </Translate>
         </motion.p>
         <motion.div custom={3} initial="hidden" animate="visible" variants={variants}>
