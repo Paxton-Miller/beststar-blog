@@ -32,5 +32,5 @@ export default function Comment() {
   giscus.theme = useColorMode().colorMode === 'dark' ? giscus.darkTheme : giscus.theme
   giscus.lang = i18n.currentLocale
 
-  return <BrowserOnly fallback={<div>Loading Comments...</div>}>{() => <Giscus {...giscus} />}</BrowserOnly>
+  return <BrowserOnly fallback={<div>Loading Comments...</div>}>{() => <Giscus {...(giscus as GiscusProps)} />}</BrowserOnly>
 }

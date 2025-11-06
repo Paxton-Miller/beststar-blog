@@ -10,7 +10,7 @@ interface GithubProps {
 }
 
 export default function Github({ className }: GithubProps) {
-  const { isDarkTheme } = useColorMode()
+  const { colorMode } = useColorMode()
 
   const githubStatsUrl = (type: 'overview' | 'languages', isDark: boolean) =>
     `https://raw.githubusercontent.com/beststarli/github-stats/master/generated/${type}.svg#gh-${
@@ -40,7 +40,7 @@ export default function Github({ className }: GithubProps) {
             }}
           />
         </div>
-        <GitHubCalendar username="beststarli" blockSize={11} colorScheme={isDarkTheme ? 'dark' : 'light'} />
+        <GitHubCalendar username="beststarli" blockSize={11} colorScheme={colorMode === 'dark' ? 'dark' : 'light'} />
       </div>
     </div>
   )

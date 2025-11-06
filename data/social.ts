@@ -23,7 +23,6 @@ const social: Social = {
   github: 'https://github.com/beststarli',
   juejin: 'https://juejin.cn/user/4452381363012896',
   xiaohongshu: 'https://www.xiaohongshu.com/user/profile/64cb7f88000000000b0073dc',
-  qqmusic: 'https://y.qq.com/n/ryqq/profile/like/song',
   cloudmusic: 'https://music.163.com/#/user/home?id=267331472',
   email: 'mailto:beststarli@foxmail.com',
   // x: 'https://twitter.com/yourusername',
@@ -86,7 +85,7 @@ const socialSet: Record<keyof Social | 'rss', SocialValue> = {
   qqmusic: {
     href: social.qqmusic,
     title: 'QQ音乐',
-    icon: 'arcticons:qq-music',
+    icon: 'ri:music-2-fill',
     color: '#0FBE73',
   },
   cloudmusic: {

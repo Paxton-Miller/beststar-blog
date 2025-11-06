@@ -2,9 +2,9 @@ import { useColorMode } from '@docusaurus/theme-common'
 import React from 'react'
 
 function index({ slug, title, height = '600px' }) {
-  const { isDarkTheme } = useColorMode()
+  const { colorMode } = useColorMode()
   const themedSrc = `https://codesandbox.io/embed/${slug}?fontsize=14&hidenavigation=1&view=preview&theme=${
-    isDarkTheme ? 'dark' : 'light'
+    colorMode === 'dark' ? 'dark' : 'light'
   }`
   return (
     <div>

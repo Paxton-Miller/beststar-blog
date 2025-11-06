@@ -1,7 +1,7 @@
 import { useBlogPost } from '@docusaurus/plugin-content-blog/client'
 import { PageMetadata } from '@docusaurus/theme-common'
 
-export default function BlogPostPageMetadata(): JSX.Element {
+export default function BlogPostPageMetadata(): React.JSX.Element {
   const { assets, metadata } = useBlogPost()
   const { title, description, date, tags, authors, frontMatter } = metadata
 
@@ -11,7 +11,6 @@ export default function BlogPostPageMetadata(): JSX.Element {
     <PageMetadata title={title} description={description} keywords={keywords} image={image}>
       <meta property="og:type" content="article" />
       <meta property="article:published_time" content={date} />
-      {/* TODO double check those article meta array syntaxes, see https://ogp.me/#array */}
       {authors.some(author => author.url) && (
         <meta
           property="article:author"

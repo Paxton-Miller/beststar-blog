@@ -32,11 +32,11 @@ const config: Config = {
         content: '博客, 技术, 生活, 编程, 项目',
       },
     ],
-    colorMode: {
-      defaultMode: 'light',
-      disableSwitch: false,
-      respectPrefersColorScheme: true, // 跟随系统主题
-    },
+    // colorMode: {
+    //   defaultMode: 'light',
+    //   disableSwitch: false,
+    //   respectPrefersColorScheme: true, // 跟随系统主题
+    // },
     docs: {
       sidebar: {
         hideable: true,
