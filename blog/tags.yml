@@ -8,6 +8,11 @@
   permalink: /essay
   description: 随笔杂谈
 
+生活:
+  label: 生活
+  permalink: /life
+  description: 生活感悟
+
 工作:
   label: 工作
   permalink: /job
